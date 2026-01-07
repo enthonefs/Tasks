@@ -65,6 +65,12 @@ public class Gerenciador {
 
     }
 
+    public void removerPorId(int id){
+        if (list.isEmpty()) return;
+        list.removeIf(tarefa -> tarefa.getId() == id);
+        System.out.println("Tarefa removida com sucesso!");
+    }
+
     public void concluirTarefa(int id){
         for (Tarefa tarefa : list){
             if (tarefa.getId() == id){

@@ -7,7 +7,8 @@ public class Main {
         tarefas.adicionarTarefa(3,"Ler", Prioridade.BAIXA, Status.CONCLUIDA);
         tarefas.adicionarTarefa(4,"Programar", Prioridade.ALTA, Status.PENDENTE);
         tarefas.adicionarTarefa(5, "Organizar", Prioridade.ALTA, Status.CONCLUIDA);
-        tarefas.filtrarPorStatus(Status.CONCLUIDA);
+        tarefas.removerPorId(1);
+        tarefas.listarTarefas();
 
 
 
